@@ -1,8 +1,10 @@
 define([
   "skylark-langx-objects",
   "skylark-io-streams",
+  "skylark-graphics-jpeg",
   "./pdfjs"
-],function(skylark_objects,skylark_streams,pdfjs){
+],function(skylark_objects,skylark_streams,skylark_jpeg,pdfjs){
+
 
 return pdfjs.worker = /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
@@ -12704,7 +12706,7 @@ exports.ArithmeticDecoder = ArithmeticDecoder;
 /***/ ((__unused_webpack_module, exports, __w_pdfjs_require__) => {
 
 
-
+/*
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
@@ -12804,12 +12806,14 @@ const JpegStream = function JpegStreamClosure() {
 }();
 
 exports.JpegStream = JpegStream;
+*/
+exports.JpegStream = skylark_jpeg.JpegStream;
 
 /***/ }),
 /* 19 */
 /***/ ((__unused_webpack_module, exports, __w_pdfjs_require__) => {
 
-
+/*
 
 Object.defineProperty(exports, "__esModule", ({
   value: true
@@ -14049,6 +14053,9 @@ var JpegImage = function JpegImageClosure() {
 }();
 
 exports.JpegImage = JpegImage;
+*/
+
+exports.JpegImage = skylark_jpeg.JpegImage;
 
 /***/ }),
 /* 20 */

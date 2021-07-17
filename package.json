@@ -25,7 +25,8 @@
   "bugs": "https://github.com/skylarkjs/skylark/issues",
   "dependencies": {
     "skylark-langx-ns": "git+https://github.com/skylark-langx/skylark-langx-ns.git",
-    "skylark-io-streams": "git+https://github.com/skylark-io/skylark-io-streams.git"
+    "skylark-io-streams": "git+https://github.com/skylark-io/skylark-io-streams.git",
+    "skylark-graphics-jpeg": "git+https://github.com/skylark-graphics/skylark-graphics-jpeg.git"
   },
   "files": [
     "demo/",
