@@ -1,5 +1,7 @@
 define([
-],function(){
+  "skylark-langx-objects",
+  "skylark-io-streams",
+],function(skylark_objects,skylark_streams){
 
 return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
@@ -7985,6 +7987,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.StringStream = exports.StreamsSequenceStream = exports.Stream = exports.RunLengthStream = exports.PredictorStream = exports.NullStream = exports.LZWStream = exports.FlateStream = exports.DecryptStream = exports.DecodeStream = exports.AsciiHexStream = exports.Ascii85Stream = void 0;
 
+/*
 var _util = __w_pdfjs_require__(2);
 
 var _primitives = __w_pdfjs_require__(5);
@@ -9278,6 +9281,9 @@ var NullStream = function NullStreamClosure() {
 }();
 
 exports.NullStream = NullStream;
+*/
+
+Object.assign(exports,skylark_streams);
 
 /***/ }),
 /* 13 */
