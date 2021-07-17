@@ -5,5 +5,5 @@
  * @link www.skylarkjs.org
  * @license MIT
  */
-define(["./worker"],function(e){return e});
-//# sourceMappingURL=sourcemaps/main.js.map
+define(["skylark-langx-ns"],function(n){return n.attach("intg.pdfjs")});
+//# sourceMappingURL=sourcemaps/pdfjs.js.map

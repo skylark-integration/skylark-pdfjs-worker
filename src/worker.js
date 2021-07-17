@@ -1,9 +1,10 @@
 define([
   "skylark-langx-objects",
   "skylark-io-streams",
-],function(skylark_objects,skylark_streams){
+  "./pdfjs"
+],function(skylark_objects,skylark_streams,pdfjs){
 
-return /******/ (() => { // webpackBootstrap
+return pdfjs.worker = /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ([
 /* 0 */

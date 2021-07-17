@@ -86,12 +86,18 @@
 
 })(function(define,require) {
 
+define('skylark-pdfjs-worker/pdfjs',[
+	"skylark-langx-ns"
+],function(skylark) {
+	return skylark.attach("intg.pdfjs");
+});
 define('skylark-pdfjs-worker/worker',[
   "skylark-langx-objects",
   "skylark-io-streams",
-],function(skylark_objects,skylark_streams){
+  "./pdfjs"
+],function(skylark_objects,skylark_streams,pdfjs){
 
-return /******/ (() => { // webpackBootstrap
+return pdfjs.worker = /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ([
 /* 0 */
@@ -55485,10 +55491,9 @@ class PDFWorkerStreamRangeReader {
 });
 
 define('skylark-pdfjs-worker/main',[
-	"skylark-langx-ns",
 	"./worker"
-],function(skylark,worker) {
-	return skylark.attach("intg.pdfjs.worker",worker);
+],function(worker) {
+	return worker;
 });
 define('skylark-pdfjs-worker', ['skylark-pdfjs-worker/main'], function (main) { return main; });
 
